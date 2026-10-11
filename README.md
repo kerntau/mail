@@ -1,45 +1,84 @@
-# curn.me — 数字容器
+<div align="center">
 
-一个以“通信坐标”和“思想锚点”为主题的极简单页。页面由三个纵向章节组成：意象首屏、可复制的通信地址，以及终章文字回响。
+# CURN.ME // DIGITAL VESSEL
 
-## 技术栈
+**极简通信坐标与思想锚点单页**<br>
+*A quiet vessel for thought and contact.*
 
-- React 19 + TypeScript
-- Vite 6
-- Tailwind CSS 3
-- Framer Motion
-- Lucide React
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=111111)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-See%20LICENSE-555555?style=for-the-badge)](LICENSE)
 
-这是一个纯前端静态项目，不包含后端、数据库或表单提交服务。
+</div>
 
-## 本地开发
+---
+
+## 01. THE PURPOSE // 项目本源
+
+mail 是一个纯前端静态页面，将意象首屏、可复制的通信地址和终章文字组织为三个纵向章节。它不包含后端、数据库或表单服务。
+
+[Repository](https://github.com/kerntau/mail)
+
+## 02. CORE ARCHITECTURE // 页面架构
+
+~~~mermaid
+graph TD
+  App[React App] --> G[Genesis section]
+  App --> A[Address section]
+  App --> P[Philosophy section]
+  A --> T[Copy toast]
+~~~
+
+## 03. TECHNICAL MATRIX // 技术矩阵
+
+| 层 | 技术 | 用途 |
+| --- | --- | --- |
+| UI | React 19 + TypeScript | 组件和交互 |
+| Build | Vite 6 | 开发与静态打包 |
+| Style | Tailwind CSS 3 | 纸张纹理、排版和响应式 |
+| Motion | Framer Motion | 入场与过渡动画 |
+| Icons | Lucide React | 图标 |
+
+## 04. REPOSITORY TOPOLOGY // 源码拓扑
+
+~~~text
+src/App.tsx              # 页面编排和滚动锚点
+src/components/          # Genesis、Address、Philosophy、Toast
+src/index.css            # Tailwind 与全局样式
+public/                  # favicon 与静态资源
+index.html               # 元数据和字体引用
+~~~
+
+## 05. CLONE & QUICK START // 极速开始
 
 需要 Node.js 18+。
 
 ~~~bash
+git clone https://github.com/kerntau/mail.git
+cd mail
 npm install
 npm run dev
 ~~~
 
-Vite 会输出本地开发地址。生产构建与预览：
+## 06. DEPLOYMENT & VERIFICATION // 部署与验证
 
-~~~bash
-npm run build
-npm run preview
-~~~
+运行 npm run build 生成静态产物，再部署到任意静态托管。发布前检查移动端滚动、复制按钮、字体加载和无 JavaScript 降级表现。
 
-## 目录
+## 07. ENGINEERING CONTRACT // 工程契约
 
-- src/App.tsx：页面布局和章节编排
-- src/components/：Genesis、Address、Philosophy 与 Toast 组件
-- src/index.css：Tailwind 与全局样式
-- public/：图标及静态资源
-- index.html：页面元数据和字体引用
+- 页面文案和通信地址不得意外提交敏感信息。
+- 组件保持纯前端，不引入未使用的后端依赖。
+- 动画需尊重 prefers-reduced-motion。
+- 修改 Tailwind 配置后必须验证生产构建。
 
-## 内容修改
+## 08. ROADMAP // 演进路线
 
-通信地址和文案位于 src/components/ 对应章节中。修改后运行 npm run build，确认静态资源路径和移动端布局正常。
+- [x] 三章节沉浸式单页
+- [x] 地址复制反馈和响应式布局
+- [ ] 可选的可访问性高对比模式
+- [ ] 更完整的静态部署示例
 
-## 许可证
+## 09. LICENSE // 许可证
 
-以仓库中的许可证文件为准。
+以仓库中的 LICENSE 文件为准。
