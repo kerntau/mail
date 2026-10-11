@@ -8,7 +8,7 @@
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=111111)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
 [![Tailwind](https://img.shields.io/badge/Tailwind-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![License](https://img.shields.io/badge/License-See%20LICENSE-555555?style=for-the-badge)](LICENSE)
+![License](https://img.shields.io/badge/License-See%20repository-555555?style=for-the-badge)
 
 </div>
 
@@ -81,4 +81,4 @@ npm run dev
 
 ## 09. LICENSE // 许可证
 
-以仓库中的 LICENSE 文件为准。
+仓库当前未附 LICENSE 文件，分发前请补充许可证并同步更新本节。
